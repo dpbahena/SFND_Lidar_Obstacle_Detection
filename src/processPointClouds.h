@@ -1,7 +1,7 @@
 // PCL lib Functions for processing point clouds 
-
-#ifndef PROCESSPOINTCLOUDS_H_
-#define PROCESSPOINTCLOUDS_H_
+#pragma once
+// #ifndef PROCESSPOINTCLOUDS_H_
+// #define PROCESSPOINTCLOUDS_H_
 
 #include <pcl/io/pcd_io.h>
 #include <pcl/common/common.h>
@@ -17,6 +17,7 @@
 #include <vector>
 #include <ctime>
 #include <chrono>
+#include <boost/filesystem.hpp>
 #include "render/box.h"
 
 template<typename PointT>
@@ -47,4 +48,4 @@ public:
     std::vector<boost::filesystem::path> streamPcd(std::string dataPath);
   
 };
-#endif /* PROCESSPOINTCLOUDS_H_ */
+// #endif /* PROCESSPOINTCLOUDS_H_ */
